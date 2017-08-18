@@ -2,7 +2,7 @@
   "parser": "babel-eslint",
   "extends": "standard",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 7,
     "sourceType": "module"
   },
   "env": {
@@ -15,6 +15,6 @@
     "phaser": true
   },
   "settings": {
-    "import/core-modules": [ "phaser", "pixi", "p2" ]
+    "import/core-modules": ["phaser", "pixi", "p2"]
   }
 }

@@ -14,7 +14,7 @@ var definePlugin = new webpack.DefinePlugin({
 
 module.exports = {
 	entry: {
-		app: ['babel-polyfill', path.resolve(__dirname, 'src/main.js')],
+		app: ['babel-polyfill', path.resolve(__dirname, '../src/main.js')],
 		vendor: ['pixi', 'p2', 'phaser', 'webfontloader'],
 	},
 	devtool: 'cheap-source-map',
