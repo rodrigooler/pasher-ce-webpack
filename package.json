@@ -44,7 +44,9 @@
   "repository": "git@github.com:rodrigooler/pasher-ce-webpack.git",
   "scripts": {
     "deploy": "webpack --config webpack.production.config.js",
-    "dev": "webpack",
+    "dev": "webpack --config /config/webpack.config.js",
+    "precommit": "lint-staged",
+    "prettier": "./node_modules/.bin/prettier --write --use-tabs --single-quote true --trailing-comma all --print-width 80 --write 'src/**/*.js'",
     "test": "eslint ./src/**/**.js",
     "upg": "yarn upgrade-interactive"
   }
